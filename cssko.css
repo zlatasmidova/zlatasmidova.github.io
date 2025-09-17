@@ -1453,14 +1453,9 @@ body {
     height: 30vh;
   }
 
-  .omne_uvod_text1 {
-    margin-top: 20px;
-    font-size: 10px;
-  }
-
+  .omne_uvod_text1,
   .omne_uvod_text2 {
-    font-size: 25px;
-    letter-spacing: 5px;
+    display: none;
   }
 
   .omne_uvod-info {
@@ -1735,5 +1730,6 @@ body {
     padding: 0;
     font-size: 18px;
   }
+
 
 }
