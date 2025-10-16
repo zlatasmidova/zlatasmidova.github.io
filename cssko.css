@@ -540,122 +540,90 @@ body {
 }
 
 
-/*o mne HTML*/
+/*me sluzby HTML*/
 
-.omne_videjko {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.mesluzby-infoProVojtu {
+  margin: 60px 0;
 }
 
-.omne_videjko video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+.mesluzby_vypis {
+  padding: 10px;
+  margin: 40px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2rem;
+
 }
 
-.omne_uvod_text1 {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  font-weight: 200;
-  font-size: 30px;
-  font-style: normal;
-  text-align: center;
+a .mesluzby_vypis-span {
+  color: inherit;
+  text-decoration: none;
 }
 
-.omne_uvod_text2 {
-  font-family: "Bodoni Moda", serif;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mesluzby_vypis-span {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 15px;
+  color: #064020;
+  text-decoration: none;
+}
+
+.mesluzby_vypis-span:hover {
+  color: white;
+  background-color: #b9b9b9;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.mesluzby_nadpis {
+  font-family: "Source Serif 4", serif;
+  font-size: 40px;
   font-weight: 400;
-  margin: 0;
-  font-size: 100px;
-  text-align: center;
+  margin: 10px;
 }
 
-.omne_uvod-info {
-  margin: 150px 0;
+.mesluzby_text {
+  font-family: "Source Serif 4", serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px;
 }
 
-.omne_jmenuji {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 200;
+.mesluzby_cudlik {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
 
-.omne_vojtech {
-  text-align: center;
-  font-family: "Bodoni Moda", serif;
-  font-size: 100px;
-  font-weight: 800;
-  height: 100px;
-  margin: 70px 0;
+.mesluzby_projects-wrapper-lichy {
+  background-color: #d1d1d1;
 }
 
-.omne_popisek {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 200;
-  margin-top: 10px;
-  color: #b3a477;
-}
 
-.omne_popisek_btn {
-  margin-top: 70px;
-  text-align: center;
-}
-
-.omne_info-wrapper {
+.mesluzby_projects-wrapper-sudy,
+.mesluzby_projects-wrapper-lichy {
   display: flex;
   flex-direction: row;
-  gap: 120px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 60px 40px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 200;
-  background-color: #b3a477;
-}
-
-.omne_info_text {
-  margin-top: 15px;
-}
-
-
-.omne_projects-wrapper {
-  display: flex;
-  flex-direction: column;
   font-size: 20px;
   font-weight: 200;
   gap: 80px;
-  padding: 60px 20px;
+  padding: 70px 0 70px 100px;
+
 }
 
-.omne_projects-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-  flex-wrap: wrap;
+.mesluzby_projects-left {
+  margin: 20px;
 }
 
-.omne_projects-box.reverse {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-  flex-wrap: wrap;
-}
-
-.omne_projects-left,
-.omne_projects-right {
+.mesluzby_projects-left,
+.mesluzby_projects-right {
   flex: 1 1 500px;
   max-width: 500px;
   display: flex;
@@ -664,24 +632,25 @@ body {
   box-sizing: border-box;
 }
 
-.omne_projects-left img,
-.omne_projects-right img {
+.mesluzby_projects-left img,
+.mesluzby_projects-right img {
   width: 100%;
   height: auto;
 }
 
-.omne_projects-popisek {
+.mesluzby_projects-popisek {
   margin: 15px 10px 0 0;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-.omne_projects_text {
+.mesluzby_projects_text {
   font-size: 60px;
   font-family: "Source Serif 4", serif;
   font-style: italic;
   margin-top: 100px;
 }
+
 
 /*portfolio HTML*/
 
