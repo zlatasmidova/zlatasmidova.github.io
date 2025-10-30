@@ -190,6 +190,7 @@ body {
 .index_maininfo-text1b {
   font-family: "Source Serif 4", serif;
   font-size: 20px;
+
 }
 
 .outline-btn {
@@ -293,62 +294,6 @@ body {
   font-weight: 300;
   line-height: 1.4;
 }
-
-.index_omne {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.index_omne-wrapper {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  padding: 50px 0;
-  margin: 50px 0;
-
-}
-
-.index_omne-left,
-.index_omne-right {
-  flex: 1 1 45%;
-  max-width: 600px;
-  box-sizing: border-box;
-}
-
-.index_omne-right {
-  margin-top: 80px;
-}
-
-.index_omne_fotka {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.index_omne_citat1 {
-  font-size: 50px;
-  font-family: "Source Serif 4", serif;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.index_omne_citat0 {
-  font-size: 20px;
-  font-family: "Source Serif 4", serif;
-  font-weight: 300;
-  color: rgb(124, 118, 55);
-  margin-bottom: 60px;
-  text-align: center;
-}
-
 
 .index_spoluprace {
   display: block;
@@ -742,9 +687,15 @@ a {
 }
 
 /*kontakt HTML*/
+
+.kontakt_uvod-foto {
+  position: absolute;
+  overflow: hidden;
+}
+
 .background-img {
   width: 100%;
-  height: 695px;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -859,7 +810,21 @@ a {
 .galerie_obsah {
   margin: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 1rem;
+}
+
+.galerie_obsah-portrety img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.galerie_obsah-portrety {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 1rem;
 }
 
@@ -933,6 +898,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .spoluprace-box {
@@ -964,15 +931,11 @@ a {
   max-width: 90%;
 }
 
-
-.spoluprace-text {
-  display: block;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  margin: 10px 0;
+.icon-link_spoluprace {
+  color: black;
+  font-size: 1.9rem;
+  text-decoration: none;
 }
-
 
 .spoluprace_back-Btn {
   display: flex;
@@ -1013,60 +976,446 @@ a {
   color: rgb(255, 255, 255);
 }
 
-/*
- MOBIL 
-@media (max-width: 480px) {
-  .index_omne-wrapper {
-    gap: 20px;
-    padding: 0 20px;
+
+@media (max-width: 1024px) {
+
+  /* index */
+  .index_overlay,
+  .carousel-img,
+  #myCarousel,
+  .dark-overlay {
+    height: 40vh;
   }
 
-  .index_omne_citat1 {
-    font-size: 22px;
+  .menu {
+    gap: 3rem;
+  }
+
+  .menu a {
+    font-size: 20px;
+  }
+
+  .index_citat {
+    font-size: 30px;
+    margin: 0 15px 20px;
+    padding: 0 10%;
+  }
+
+  .index_maininfo-text1a {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .index_maininfo-text1b {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  .index_omne_vojta {
+    height: 400px;
+  }
+
+  .index_recenze {
+    padding: 20px;
+  }
+
+  .recenze-nadpis {
+    padding: 10px 0;
+    font-size: 30px;
+  }
+
+  .rec-prev,
+  .rec-next {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .recenze-viewport {
+    overflow: hidden;
+    width: 100%;
+    max-width: none;
+  }
+
+  .recenze-carousel {
+    gap: 0;
+    margin: 0 auto;
+  }
+
+  .recenze-box {
+    flex: 0 0 300px;
+    box-sizing: border-box;
     text-align: center;
+    padding: 30px 10px;
+    margin: 20px 10px;
+    border-radius: 15px;
   }
 
-  .index_omne_citat0 {
-    font-size: 14px;
-    margin-bottom: 30px;
-    text-align: center;
+  .recenze-box img {
+    height: 250px;
+    margin-bottom: 10px;
+    max-width: 80%;
   }
 
-  .index_omne-left,
-  .index_omne-right {
-    flex: 1 1 100%;
-    max-width: 100%;
+  .index_spoluprace {
+    margin: 60px 0 10px;
   }
 
-  .index_omne-right {
-    margin: 50px 0 0;
+  .index_spoluprace-text {
+    margin: 50px 0;
+    font-size: 35px;
   }
 
-  .index_omne_fotka {
-    max-width: 90%;
-    margin-top: 30px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .index_spoluprace-logo {
+    height: 90px;
+    margin: 20px;
   }
 
-  .row.g-0 {
-    flex-direction: column;
-    gap: 5px;
+  .index_spoluprace-loga {
+    margin: 0;
+  }
+
+  .index_mezi-line {
+    margin: 60px 40px;
+  }
+
+  .index_kontakt {
+    padding: 0 0 30px;
+  }
+
+  .index_kontakt-obsah {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
+    padding: 0 40px;
+    width: 100%;
   }
 
-  .menu_text {
-    font-size: 14px;
+  .index_kontakt_text1 {
+    font-size: 35px;
+    font-family: "Source Serif 4", serif;
+  }
+
+  .index_kontakt_text2 {
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "Source Serif 4", serif;
+    padding: 0 20% 10px;
+  }
+
+  .index_kontakt-left {
+    display: flex;
+    flex: 1 1 500px;
+    justify-content: center;
+  }
+
+  .index_kontakt-right {
+    display: flex;
+    flex: 1 1 400px;
+    height: auto;
+  }
+
+  .index_kontakt-right img {
+    height: 350px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .footer {
+    min-height: 60px;
+    padding: 0 2rem;
+  }
+
+  .copyright-text {
+    position: absolute;
+    flex: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 0.6rem;
+    line-height: 1;
+  }
+
+  .btn-top {
+    bottom: 10px;
+    right: 20px;
+    padding: 15px;
+  }
+
+  .footer-icons {
+    position: absolute;
+    left: 65%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .icon-link {
+    font-size: 1.5rem;
+  }
+
+  /*spoluprace*/
+  .spoluprace_uvod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .spoluprace_icons {
+    display: flex;
+    gap: 1rem;
+    margin-right: 20px;
+  }
+
+  .icon-link_spoluprace {
+    color: black;
+    font-size: 1.9rem;
+    text-decoration: none;
+  }
+
+  .spoluprace_back-Btn {
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+  }
+
+  .spoluprace_nadpis {
+    font-size: 40px;
+  }
+
+  .spoluprace-wrapper {
+    height: 450px;
+    margin: 10px 0 50px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .spoluprace-box {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #b9b9b9;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 4px 4px 5px rgb(0, 0, 0, 0.6);
+  }
+
+  .spoluprace-box:hover {
+    opacity: 80%;
+    transition: transform 0.3s ease;
+    transform: scale(105%);
+    cursor: pointer;
+  }
+
+  .spoluprace-img {
+    height: 300px;
+    margin: 5px 0 20px;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 25px;
+    max-width: 90%;
+  }
+
+  /*portfolio */
+  .portfolio_text-blok {
+    gap: 1rem;
+    padding: 10px 20px;
+  }
+
+  .portfolio_text1 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+
+  .portfolio_text2 {
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+
+  .portfolio_gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 15px;
+  }
+
+  .portfolio_outline-btn {
+    padding: 5px 10px;
+    font-size: 0.6rem;
+    opacity: 1;
+  }
+
+  .portfolio-box .portfolio-text {
+    margin: 0 15px;
+  }
+
+  /*galerie*/
+
+  .galerie_obsah {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .galerie_obsah img {
+    height: 300px;
+  }
+
+  .galerie_obsah-portrety {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .galerie_nadpis {
+    font-size: 70px;
+  }
+
+  .galerie_popis-text {
+    font-size: 22px;
+  }
+
+  /*me sluzby*/
+
+  .mesluzby_vypis {
+    padding: 5px;
+    margin: 10px 0;
+    letter-spacing: 0;
+  }
+
+  .mesluzby-infoProVojtu {
+    font-size: 15px;
+    margin: 50px 0;
+  }
+
+  .mesluzby_nadpis {
+    font-size: 35px;
+    font-weight: 400;
+    margin: 10px;
+  }
+
+  .mesluzby_text {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px;
+  }
+
+  .mesluzby_projects-wrapper-sudy,
+  .mesluzby_projects-wrapper-lichy {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px 10px;
+  }
+
+  .mesluzby_projects-left,
+  .mesluzby_projects-right {
+    margin: 20px;
+  }
+
+  /*kontakt*/
+  .background-img {
+    height: 40vh;
+  }
+
+  .kontakt-wrapper {
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .kontakt_obsah-left,
+  .kontakt_obsah-right {
+    margin: 0;
+  }
+
+  .kontakt_obsah-right {
     padding: 0;
-    order: 1;
+    width: 75%;
+  }
+
+  .kontakt_uvod_text2 {
+    font-size: 34px;
+    margin-top: 20px;
+    letter-spacing: 0;
+  }
+
+  .kontakt_form {
+    margin-top: 50px;
+  }
+
+  .kontakt_form .kontakt_outline-btn {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .kontakt_form-control {
+    margin-bottom: 20px;
+  }
+
+  .kontakt_fotky-blok {
+    margin: 50px 0;
+  }
+
+  .kontakt_fotka {
+    height: 250px;
+  }
+
+  .kontakt_insta {
+    margin-top: 20px;
+  }
+
+}
+
+/* MOBIL */
+@media (max-width: 480px) {
+
+  /* index */
+  .index_overlay {
+    height: 30vh;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+    width: 100%;
+  }
+
+  .menu li {
+    text-align: center;
+  }
+
+  .menu a {
+    font-size: 10px;
+    padding: 0.5rem 0.5rem;
   }
 
   .index_citat {
     font-size: 14px;
     margin: 15px;
     padding: 0 10%;
+  }
+
+  .index_maininfo-text1a {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .index_maininfo-text1b {
+    font-size: 16px;
+    font-weight: 300;
   }
 
   .logo img {
@@ -1083,30 +1432,58 @@ a {
     height: 30vh;
   }
 
-  .index_overlay {
-    height: 30vh;
-  }
-
   .dark-overlay {
     height: 30vh;
   }
 
-  .index_omne_vojta1 {
-    height: auto;
-    width: 70%;
-    margin: 0 auto 0 auto;
-    display: block;
+  .index_omne_vojta {
+    height: 400px;
   }
 
-  .index_omne_vojta2 {
-    height: auto;
-    width: 70%;
-    margin: 0 auto 0 auto;
-    display: block;
+  .index_recenze {
+    padding: 20px;
+  }
+
+  .recenze-nadpis {
+    padding: 10px 0;
+    font-size: 30px;
+  }
+
+  .rec-prev,
+  .rec-next {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .recenze-viewport {
+    overflow: hidden;
+    width: 100%;
+    max-width: none;
+  }
+
+  .recenze-carousel {
+    gap: 0;
+    margin: 0 auto;
+  }
+
+  .recenze-box {
+    flex: 0 0 300px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 30px 10px;
+    margin: 20px 10px;
+    border-radius: 15px;
+  }
+
+  .recenze-box img {
+    height: 250px;
+    margin-bottom: 10px;
+    max-width: 80%;
   }
 
   .index_spoluprace {
-    margin: 40px 0 0;
+    margin: 60px 0 10px;
   }
 
   .index_spoluprace-text {
@@ -1114,7 +1491,7 @@ a {
   }
 
   .index_spoluprace-logo {
-    height: 60px;
+    height: 70px;
     margin: 20px;
   }
 
@@ -1122,32 +1499,8 @@ a {
     margin: 0;
   }
 
-  .index_portfolio {
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 40vh;
-    isolation: isolate;
-    position: relative;
-  }
-
-  .index_portfolio_btn {
-    padding: 8px 12px;
-    font-size: 0.5rem;
-  }
-
-
-  .index_portfolio::before {
-    display: none;
-  }
-
-  .index_portfolio_text {
-    font-size: 30px;
-    font-family: "Source Serif 4", serif;
-    font-weight: 500;
-    text-shadow: 2px 2px 1px black;
-    position: relative;
-    z-index: 1;
+  .index_mezi-line {
+    margin: 40px;
   }
 
   .index_kontakt {
@@ -1197,14 +1550,8 @@ a {
   }
 
   .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #013507;
     min-height: 60px;
-    text-align: center;
     padding: 0 2rem;
-    color: #ffffff;
   }
 
   .copyright-text {
@@ -1234,14 +1581,37 @@ a {
     font-size: 1.5rem;
   }
 
-  /*portfolio HTML
-  .background-img {
-    height: 30vh;
+  /*spoluprace*/
+
+  .spoluprace_uvod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
   }
 
+  .spoluprace_icons {
+    display: flex;
+    gap: 1rem;
+    margin-right: 20px;
+  }
+
+  .icon-link_spoluprace {
+    color: black;
+    font-size: 1.9rem;
+    text-decoration: none;
+  }
+
+  .spoluprace_back-Btn {
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+  }
+
+  /*portfolio */
   .portfolio_text-blok {
     gap: 1rem;
-    padding: 40px 20px;
+    padding: 10px 20px;
   }
 
   .portfolio_text1 {
@@ -1254,56 +1624,10 @@ a {
     margin-bottom: 0;
   }
 
-  .portfolio_horizontal-line1,
-  .portfolio_horizontal-line2 {
-    width: 2px;
-    background-color: #000;
-  }
-
-  .portfolio_horizontal-line1 {
-    height: 70px;
-  }
-
-  .portfolio_horizontal-line2 {
-    height: 130px;
-  }
-
-  .portfolio_text3 {
-    gap: 1rem;
-    font-size: 30px;
-  }
-
-  .portfolio_text4 {
-    font-size: 16px;
-    width: 50%;
-  }
-
-  .portfolio_uvod-fotka1 {
-    top: 480px;
-    left: -80px;
-    height: 120px;
-  }
-
-  .portfolio_uvod-fotka2,
-  .portfolio_uvod-fotka4 {
-    display: none;
-  }
-
-  .portfolio_uvod-fotka3 {
-    right: -30px;
-    top: 530px;
-    height: 120px;
-  }
-
   .portfolio_gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 60px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     margin: 30px 15px;
-  }
-
-  .portfolio_nadpis {
-    font-size: 20px;
   }
 
   .portfolio_outline-btn {
@@ -1312,136 +1636,78 @@ a {
     opacity: 1;
   }
 
-  .portfolio_item-reportaz .portfolio_nadpis,
-  .portfolio_item-portret .portfolio_nadpis,
-  .portfolio_item-svatba .portfolio_nadpis,
-  .portfolio_item-produkty .portfolio_nadpis,
-  .portfolio_item-priroda .portfolio_nadpis {
-    transform: translate(-50%, -20px);
+
+  .portfolio-box .portfolio-text {
+    margin: 0 15px;
   }
 
-  .portfolio_item-reportaz .portfolio_outline-btn,
-  .portfolio_item-portret .portfolio_outline-btn,
-  .portfolio_item-svatba .portfolio_outline-btn,
-  .portfolio_item-produkty .portfolio_outline-btn,
-  .portfolio_item-priroda .portfolio_outline-btn {
-    transform: translate(-50%, 0px);
+  /*galerie*/
+
+  .galerie_obsah {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 
-  .portfolio_item-reportaz:hover .portfolio_outline-btn,
-  .portfolio_item-portret:hover .portfolio_outline-btn,
-  .portfolio_item-svatba:hover .portfolio_outline-btn,
-  .portfolio_item-produkty:hover .portfolio_outline-btn,
-  .portfolio_item-priroda:hover .portfolio_outline-btn {
-    transform: translate(-50%, 0px);
+  .galerie_obsah img {
+    height: 200px;
   }
 
-  .portfolio_item-reportaz:hover .portfolio_nadpis,
-  .portfolio_item-portret:hover .portfolio_nadpis,
-  .portfolio_item-svatba:hover .portfolio_nadpis,
-  .portfolio_item-produkty:hover .portfolio_nadpis,
-  .portfolio_item-priroda:hover .portfolio_nadpis {
-    transform: translate(-50%, -20px);
+  .galerie_obsah-portrety {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  .omne_videjko {
-    height: 30vh;
+  /*me sluzby*/
+
+  .mesluzby_vypis {
+    padding: 5px;
+    margin: 10px 0;
+    letter-spacing: 0;
   }
 
-  .omne_uvod_text1,
-  .omne_uvod_text2 {
-    display: none;
+  .mesluzby-infoProVojtu {
+    font-size: 10px;
+    margin: 10px;
   }
 
-  .omne_uvod-info {
-    margin: 50px 0;
+  .mesluzby_vypis-span {
+    font-size: 10px;
+    padding: 0;
+    margin: 0 10px;
   }
 
-  .omne_jmenuji {
-    font-size: 25px;
+  .mesluzby_vypis-span:hover {
+    color: black;
+    background-color: transparent;
   }
 
-  .omne_vojtech {
-    font-size: 45px;
-    font-weight: 800;
-    margin: 20px 0 60px;
+  .mesluzby_nadpis {
+    font-size: 35px;
+    font-weight: 400;
+    margin: 10px;
   }
 
-  .omne_popisek {
-    font-size: 15px;
-    margin: 0;
+  .mesluzby_text {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px;
   }
 
-  .omne_popisek_btn {
-    margin-top: 30px;
-  }
-
-  .omne_info-wrapper {
-    gap: 40px;
-  }
-
-  .omne_info_text {
-    margin-top: 15px;
-    padding: 0 20%;
-  }
-
-  .omne_projects-wrapper {
-    display: flex;
-    flex-direction: column;
+  .mesluzby_projects-wrapper-sudy,
+  .mesluzby_projects-wrapper-lichy {
+    display: block;
+    align-items: center;
     font-size: 20px;
     font-weight: 200;
-    gap: 80px;
-    padding: 20px 20px;
+    padding: 20px 10px;
   }
 
-  .omne_projects-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+  .mesluzby_projects-left,
+  .mesluzby_projects-right {
+    margin: 20px;
   }
 
-  .omne_projects-box.reverse {
-    flex-direction: row;
-    gap: 30px;
-  }
-
-  .omne_projects-left,
-  .omne_projects-right {
-    flex: 1 1 500px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    box-sizing: border-box;
-  }
-
-  .omne_projects-left img,
-  .omne_projects-right img {
-    width: 100%;
-    height: auto;
-  }
-
-  .omne_projects-left .outline-btn,
-  .omne_projects-right .outline-btn {
-    margin: 0 auto;
-    display: block;
-  }
-
-  .omne_projects-popisek {
-    margin: 10px 0;
-    padding: 0 10px 0 0;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .omne_projects_text {
-    font-size: 40px;
-    font-family: "Source Serif 4", serif;
-    font-style: italic;
-    margin: 50px 0 10px;
+  /*kontakt*/
+  .background-img {
+    height: 30vh;
   }
 
   .kontakt-wrapper {
@@ -1486,8 +1752,7 @@ a {
     height: 100px;
   }
 
-  /*galerie MOBIL
-
+  /*galerie MOBIL */
   .galerie_nadpis {
     font-size: 50px;
     text-shadow: none;
@@ -1513,114 +1778,3 @@ a {
     margin: 0 auto;
   }
 }
-
-@media (max-width: 360px) {
-  /*pro mensi mobily
-
-  .index_citat {
-    font-size: 12px;
-    margin: 15px 0 15px;
-    padding: 0;
-  }
-
-  .index_overlay {
-    padding: 10px 20px 0;
-    justify-content: center;
-  }
-
-  .index_omne_vojta {
-    height: auto;
-    width: 75%;
-    margin: 0 auto 0 auto;
-    display: block;
-  }
-
-  .footer {
-    min-height: 55px;
-  }
-
-  .btn-top {
-    bottom: 10px;
-    right: 20px;
-    padding: 15px;
-  }
-
-  .footer-icons {
-    margin-bottom: 10px;
-  }
-
-  /*portfolio HTML
-
-  .portfolio_text-blok {
-    gap: 0.5rem;
-    padding: 20px 20px;
-  }
-
-  .portfolio_text3 {
-    gap: 0.5rem;
-    font-size: 25px;
-  }
-
-  .portfolio_text4 {
-    font-size: 12px;
-  }
-
-  .portfolio_uvod-fotka1 {
-    top: 380px;
-    height: 100px;
-  }
-
-  .portfolio_uvod-fotka3 {
-    right: -20px;
-    top: 420px;
-    height: 90px;
-  }
-
-  .omne_uvod_text1,
-  .omne_uvod_text2 {
-    display: none;
-  }
-
-  .omne_info-wrapper {
-    gap: 35px;
-    padding: 40px 20px;
-  }
-
-  .omne_info-wrapper img {
-    width: 85%;
-  }
-
-  .omne_projects-wrapper {
-    padding: 40px 20px 20px;
-    gap: 40px;
-  }
-
-  .kontakt_insta {
-    font-size: 12px;
-  }
-
-  /*galerie MOBIL
-
-  .galerie_nadpis {
-    font-size: 50px;
-    text-shadow: none;
-  }
-
-  .galerie_popis-blok {
-    padding: 0 10px;
-  }
-
-  .galerie_popis-text {
-    padding: 0;
-    font-size: 18px;
-  }
-
-}
-
-@media (max-width: 900px) {
-  .recenze-box { flex: 0 0 50%; } 
-}
-@media (max-width: 600px) {
-  .recenze-box { flex: 0 0 100%; } 
-}
-*/
