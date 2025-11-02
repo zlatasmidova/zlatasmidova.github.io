@@ -5,9 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VOJTĚCH KOHOUT | Fotograf z Krkonoš</title>
+  <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!--CSS Script-->
   <link rel="stylesheet" href="cssko.css">
+  <!--Linking Swiper Script-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -71,6 +76,7 @@
       &bdquo;Vaše radost z fotek je pro mě tou největší motivací&ldquo;
     </div>
   </div>
+
   <div class="index_maininfo-container">
     <div class="index_maininfo-left">
       <div class="index_maininfo-text1a">Něco málo o mně</div>
@@ -104,95 +110,151 @@
 
 
   <div class="index_recenze">
-    <div class="recenze-nadpis">RECENZE</div>
-
-    <div class="recenze-carousel">
-      <button class="rec-prev">&#10094;</button>
-
-      <div class="recenze-viewport">
-        <div class="recenze-track">
-
-          <div class="recenze-box">
-            <img src="SluzbyNahledovky/IMG_1303_recenze.jpg">
-            <div class="recenze-jmeno">Kája</div>
-            <div class="recenze-text">
-              No lidičky.. foceníčko mě mega bavilo. Byla to bžunda a mám díky kolegovi překrásné fotečky,
-              protože to je kluk šikovná a yappa yappa týme
+    <div class="index_recenze-container swiper">
+      <div class="index_recenze-wrapper">
+        <div class="card-list swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="SluzbyNahledovky/IMG_1303_recenze.jpg">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Téhle kočičce to sluší</h3>
+              <p class="card-text">No lidičky.. foceníčko mě mega bavilo.
+                Byla to bžunda a mám díky kolegovi překrásné fotečky,
+                protože to je kluk šikovná a yappa yappa týme</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Kája ... </span>
+                    <span class="card-profile-role">třeba datum</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="recenze-box">
-            <img src="SluzbyNahledovky/IMG_6220_recenze.jpg">
-            <div class="recenze-jmeno">Ester</div>
-            <div class="recenze-text">
-              No lidičky.. foceníčko mě mega bavilo. Byla to bžunda a mám díky kolegovi překrásné fotečky,
-              protože to je kluk šikovná a yappa yappa týme
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="SluzbyNahledovky/IMG_6220_recenze.jpg">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Téhle kočičce to sluší</h3>
+              <p class="card-text">No lidičky.. foceníčko mě mega bavilo.
+                Byla to bžunda a mám díky kolegovi překrásné fotečky,
+                protože to je kluk šikovná a yappa yappa týme</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Esterka ...</span>
+                    <span class="card-profile-role">třeba datum</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="recenze-box">
-            <img src="SluzbyNahledovky/IMG_9394_recenze.jpg">
-            <div class="recenze-jmeno">Klárka</div>
-            <div class="recenze-text">
-              No lidičky.. foceníčko mě mega bavilo. Byla to bžunda a mám díky kolegovi překrásné fotečky,
-              protože to je kluk šikovná a yappa yappa týme
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="SluzbyNahledovky/IMG_9394_recenze.jpg">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Téhle kočičce to sluší</h3>
+              <p class="card-text">No lidičky.. foceníčko mě mega bavilo.
+                Byla to bžunda a mám díky kolegovi překrásné fotečky,
+                protože to je kluk šikovná a yappa yappa týme</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Klárka ...</span>
+                    <span class="card-profile-role">třeba datum</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="recenze-box">
-            <img src="SluzbyNahledovky/IMG_3786_recenze.jpg">
-            <div class="recenze-jmeno">Sára</div>
-            <div class="recenze-text">
-              No lidičky.. foceníčko mě mega bavilo. Byla to bžunda a mám díky kolegovi překrásné fotečky,
-              protože to je kluk šikovná a yappa yappa týme
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="SluzbyNahledovky/IMG_3786_recenze.jpg">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Téhle kočičce to sluší</h3>
+              <p class="card-text">No lidičky.. foceníčko mě mega bavilo.
+                Byla to bžunda a mám díky kolegovi překrásné fotečky,
+                protože to je kluk šikovná a yappa yappa týme</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Sára ...</span>
+                    <span class="card-profile-role">třeba datum</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="recenze-box">
-            <img src="SluzbyNahledovky/IMG_9463_recenze.jpg">
-            <div class="recenze-jmeno">slečna</div>
-            <div class="recenze-text">
-              No lidičky.. foceníčko mě mega bavilo. Byla to bžunda a mám díky kolegovi překrásné fotečky,
-              protože to je kluk šikovná a yappa yappa týme
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="SluzbyNahledovky/IMG_9463_recenze.jpg">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Téhle kočičce to sluší</h3>
+              <p class="card-text">No lidičky.. foceníčko mě mega bavilo.
+                Byla to bžunda a mám díky kolegovi překrásné fotečky,
+                protože to je kluk šikovná a yappa yappa týme</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Princezna ...</span>
+                    <span class="card-profile-role">třeba datum</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="recenze-box">
-            <img src="SluzbyNahledovky/IMG_6907_recenze.jpg">
-            <div class="recenze-jmeno">koník</div>
-            <div class="recenze-text">
-              No lidičky.. foceníčko mě mega bavilo. Byla to bžunda a mám díky kolegovi překrásné fotečky,
-              protože to je kluk šikovná a yappa yappa týme
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="SluzbyNahledovky/IMG_7668_recenze.jpg">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Téhle kočičce to sluší</h3>
+              <p class="card-text">No lidičky.. foceníčko mě mega bavilo.
+                Byla to bžunda a mám díky kolegovi překrásné fotečky,
+                protože to je kluk šikovná a yappa yappa týme</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Lučinka ...</span>
+                    <span class="card-profile-role">třeba datum</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="recenze-box">
-            <img src="SluzbyNahledovky/IMG_7668_recenze.jpg">
-            <div class="recenze-jmeno">slunečnice</div>
-            <div class="recenze-text">
-              No lidičky.. foceníčko mě mega bavilo. Byla to bžunda a mám díky kolegovi překrásné fotečky,
-              protože to je kluk šikovná a yappa yappa týme
-            </div>
-          </div>
-
         </div>
-      </div>
 
-      <button class="rec-next" aria-label="Next">&#10095;</button>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
     </div>
   </div>
 
   <div class="index_spoluprace">
     <div class="index_spoluprace-text">SPOLUPRACUJI S:</div>
     <div class="index_spoluprace-loga">
-      <a href="spoluprace.html"><img src="SluzbyNahledovky/krnap.gif" height="200" class="index_spoluprace-logo"></a>
-      <a href="spoluprace.html"><img src="SluzbyNahledovky/dogRunLogo.jpg" height="220" class="index_spoluprace-logo"></a>
-      <a href="spoluprace.html"><img src="SluzbyNahledovky/KrkonoseDenik.png" height="120" class="index_spoluprace-logo"></a>
-      <a href="spoluprace.html"><img src="SluzbyNahledovky/zesnad.jpg" height="200" class="index_spoluprace-logo"></a>
+      <a href="https://www.krnap.cz/fotogalerie/" target="_blank"><img src="SluzbyNahledovky/krnap.gif" height="200"
+          class="index_spoluprace-logo"></a>
+      <a href="https://www.facebook.com/dogrunvrchlabi/?locale=cs_CZ" target="_blank"><img
+          src="SluzbyNahledovky/dogRunLogo.jpg" height="220" class="index_spoluprace-logo"></a>
+      <a href="https://krkonossky.denik.cz/" target="_blank"><img src="SluzbyNahledovky/KrkonoseDenik.png" height="120"
+          class="index_spoluprace-logo"></a>
+      <a href="https://www.zesnad.cz/galerie/" target="_blank"><img src="SluzbyNahledovky/zesnad.jpg" height="200"
+          class="index_spoluprace-logo"></a>
     </div>
   </div>
 
-<div class="index_mezi-line"></div>
+  <div class="index_mezi-line"></div>
 
   <div id="kontakt" class="index_kontakt">
     <div class="index_kontakt_text1">Kontaktujte mě!</div>
@@ -235,12 +297,15 @@
     </span>
   </footer>
   <button class="btn-top"><i class="bi bi-arrow-up icon_up"></i></button>
+  <!--Linking Swiper Script-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="javascript.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
 </body>
 
 </html>
